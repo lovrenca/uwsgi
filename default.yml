@@ -4,12 +4,10 @@ uwsgi:
 	processes: 8
 	threads: 2
 	no-orphans: true
-	http-socket: 127.0.0.1:9000
+	socket: 0.0.0.0:9000
 	log-date: true
 	uid: www-data
 	gid: www-data
 	harakiri: 120
 	attach-daemon: true
-	if-exist: /opt/uwsgi/conf.d/custom.yml
-	include: /opt/uwsgi/conf.d/custom.yml
-	endif:
+
