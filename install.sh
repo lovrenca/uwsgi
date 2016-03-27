@@ -30,7 +30,7 @@ mkdir "${BUILD_DIR}"
 cd "${BUILD_DIR}"
 
 echo "> Update the system"
-apt-get update -y 
+apt-get update -y
 apt-get upgrade -y
 
 echo "> Install the build dependencies"

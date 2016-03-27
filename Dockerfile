@@ -7,7 +7,7 @@
 ################################################################################
 #
 # UWSGI image dockerfile
-# 
+#
 ##################################---BASE---####################################
 
 FROM debian
@@ -27,7 +27,7 @@ ENV DEBIAN_FRONTEND noninteractive
 
 #Add and lunch the install script
 ADD install.sh /tmp/install.sh
-RUN chmod +x /tmp/install.sh && /tmp/install.sh
+RUN chmod +x /tmp/install.sh && sleep 5 && /tmp/install.sh
 ADD default.yml /opt/uwsgi/default.yml
 
 # Set the working conditions
@@ -36,53 +36,3 @@ EXPOSE 9000
 CMD  uwsgi --yaml /opt/uwsgi/default.yml
 
 ################################################################################
-
-
-
-
-
-
-
-
-
-
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                
-
-
-
-
-
-
-
-
-
-
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                                                      
-                                                                                                
