@@ -48,7 +48,7 @@ pip3 install -U uwsgi
 mkdir -p /opt/uwsgi/conf.d
 
 echo " > Install django"
-pip3 install -U django werkzeug
+pip3 install -U django werkzeug pyyaml
 
 echo " > Cleanup"
 rm -fr "${BUILD_DIR}"
