@@ -36,19 +36,15 @@ apt-get upgrade -y
 echo "> Install the build dependencies"
 apt-get -y install \
 	build-essential \
-	python3-dev \
-	python3-pip \
-	python3-psycopg2 \
+	python-dev \
+	python-pip \
+	python-psycopg2 \
 	curl
 apt-get clean
-apt-get install -U pip
 
 echo " >Install uwsgi"
-pip3 install -U uwsgi
+pip install -U uwsgi
 mkdir -p /opt/uwsgi/conf.d
-
-echo " > Install django"
-pip3 install -U django werkzeug pyyaml
 
 echo " > Cleanup"
 rm -fr "${BUILD_DIR}"

@@ -1,7 +1,6 @@
 # uWSGI
 
 This docker image runs uwsgi on port 9000.
-Django is included.
 The default config file used is located in /opt/uwsgi/default.yml
 It includes any .yml config files located in to /opt/uwsgi/conf.d directory.
 While the config file does include the vbasic configuration, it is unaware of your application.
@@ -54,7 +53,7 @@ Specifics such as paths, custom volumes and enviormentas were of course stripped
 
 ## Tips and tricks
 
-As this image includes django, it is possible to attach to the container and issue commands in it's bash shell. 
+As this image includes django, it is possible to attach to the container and issue commands in it's bash shell.
 
 ```
 docker exec -ti <container-name> bash
